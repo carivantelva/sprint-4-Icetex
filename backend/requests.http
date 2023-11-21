@@ -1,0 +1,99 @@
+
+------------------USER---------------------------
+###
+POST http://localhost:3600/api/users HTTP/1.1
+Content-Type: application/json
+
+{
+    "name": "Tulio coco",
+    "age": "35",
+    "email": "alberto@vargas.com"
+}
+
+###
+GET http://localhost:3600/api/users/ HTTP/1.1
+
+
+###
+GET http://localhost:3600/api/users/65543409df2b21e860fe3f1c HTTP/1.1
+
+###
+PUT http://localhost:3600/api/users/6554a84ca1e57c2de28464d5 HTTP/1.1
+Content-Type: application/json
+
+{
+    "name": "Jose Luis ",
+    "age": "67",
+    "email": "josel@perales.com"
+}
+
+###
+DELETE  http://localhost:3600/api/users/6556dcce3f65bac3abc9d3be HTTP/1.1
+
+
+-------------------LOGIN----------------------------
+
+###
+POST http://localhost:3600/api/logins HTTP/1.1
+Content-Type: application/json
+Authorization: 123456
+
+{
+    "userName": "jose jose",       
+    "password": "12334"
+}
+
+###
+GET http://localhost:3600/api/logins HTTP/1.1
+Authorization: 655accc7b78145931e68a9ef
+
+###
+DELETE  http://localhost:3600/api/logins/6555fe60e43cfc4bd20f37e1 HTTP/1.1
+
+
+
+---------------PRODUCT-----------------------------
+
+###
+POST http://localhost:3600/api/product HTTP/1.1
+Content-Type: application/json
+
+{
+    "nameProduct": "jean Americano",
+    "description":"pantalon hombre",
+    "price": "8505",
+    "cant": "2"
+}
+
+###
+GET http://localhost:3600/api/product HTTP/1.1
+
+
+
+
+----------------------CART-----------------------------
+
+
+###
+POST http://localhost:3600/api/cart HTTP/1.1
+Content-Type: application/json
+
+{
+    "nameProduct": "pantalon",
+    "price": "2500",
+    "cant": "1"
+}
+
+###
+GET http://localhost:3600/api/cart HTTP/1.1
+
+###
+PUT http://localhost:3600/api/cart/6558a672e318fc69e99af7a2 HTTP/1.1
+Content-Type: application/json
+
+{
+   "nameProduct": "bluza roja",
+    "price": "11000",
+    "cant": "2"
+}
+
