@@ -1,3 +1,0 @@
-este proyecto es del video youtube  = API REST, Node js & MongoDB Atlas, Express | CRUD
-
-CANAL : MonkeyWit
